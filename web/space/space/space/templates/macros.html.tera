@@ -1,0 +1,3 @@
+{% macro nav_link(name, target) %}
+<li><a href="{{ target }}">{{ name }}</a></li>
+{% endmacro nav_link %}

@@ -1,0 +1,38 @@
+body {
+	background-color: #303840;
+	color: #a0a8b0;
+}
+
+.content {
+	background-color: #404850;
+	margin: 6px auto;
+	min-height: 700px;
+	padding: 32px;
+	width: 75%;
+}
+
+.flash {
+	color: #e86068;
+	text-align: center;
+}
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.navbar > li {
+	float: left;
+}
+
+.navbar > li > a {
+	color: #7080e0;
+	padding: 8px 16px;
+}
+
+.note {
+	color: #60b8b0;
+	overflow-wrap: break-word;
+}

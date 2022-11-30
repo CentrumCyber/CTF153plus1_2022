@@ -1,0 +1,31 @@
+{% import "macros" as macros %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Space</title>
+		<link rel="stylesheet" href="/static/style.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div>
+				<ul class="navbar">
+					{% if logged_in %}
+					{{ macros::nav_link(name="View note", target="/note/view") }}
+					{{ macros::nav_link(name="Edit note", target="/note/edit") }}
+					{{ macros::nav_link(name="Log out", target="/logout") }}
+					{% else %}
+					{{ macros::nav_link(name="Log in", target="/login") }}
+					{{ macros::nav_link(name="Register", target="/register") }}
+					{% endif %}
+				</ul>
+			</div>
+			<hr />
+			{% if flash is defined %}
+			<h2 class="flash">{{ flash }}</h2>
+			{% endif %}
+			<hr />
+			{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>
