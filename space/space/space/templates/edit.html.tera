@@ -1,0 +1,9 @@
+{% extends "base" %}
+
+{% block content %}
+<form action="/note/edit" method="POST">
+	<textarea name="content" maxlength="255" cols="64" rows="4">Your note goes here...</textarea>
+	<br />
+	<input type="submit" />
+</form>
+{% endblock %}

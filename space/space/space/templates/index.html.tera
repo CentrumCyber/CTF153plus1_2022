@@ -1,0 +1,6 @@
+{% extends "base" %}
+
+{% block content %}
+<h2>Index</h2>
+<h4>Nothing to see here, register an account and create a note</h4>
+{% endblock %}
