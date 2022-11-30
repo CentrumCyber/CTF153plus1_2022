@@ -1,0 +1,17 @@
+version: "3"
+
+services:    
+  # web  
+  gif-backend:
+    image: web/backend
+    ports:
+      - "50015:8080"
+    restart: always
+    
+  gif-frontend:
+    image: web/frontend
+    ports:
+      - "50016:8080"
+    restart: always
+    depends_on:
+      - gif-backend
