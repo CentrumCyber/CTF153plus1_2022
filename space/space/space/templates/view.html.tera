@@ -1,6 +1,0 @@
-{% extends "base" %}
-
-{% block content %}
-<h2>Your note</h2>
-<h4 class="note">{{ note }}</h4>
-{% endblock %}
