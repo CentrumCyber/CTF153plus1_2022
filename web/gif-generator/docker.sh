@@ -1,2 +1,2 @@
-docker build -t src/frontend
-docker build -t src/backend
+docker build src/frontend
+docker build src/backend
